@@ -1,0 +1,7 @@
+#过滤文件
+*.config
+*.csproj
+#过滤文件夹
+bin/
+obj/
+Properties/
