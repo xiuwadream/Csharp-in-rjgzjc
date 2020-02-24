@@ -21,7 +21,8 @@ namespace 数组
                     min = n;
             }
             avg = sum * 1.0 / arr.Length;
-            Console.WriteLine($"最大值:{max} 最小值:{min} 和:{sum} 平均值:{avg}");
+            Console.WriteLine($"最大值:{max}最小值:{min}和:{sum} 平均值:{avg}");
+            Console.WriteLine("最大值:{0}最小值:{1}和:{2} 平均值:{3}", max, min, sum, avg);
         }
         static void getInput(out int input)
         {

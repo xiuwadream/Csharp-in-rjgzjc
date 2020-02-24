@@ -15,7 +15,7 @@ namespace 素因子
                 Console.WriteLine(2 + " ");
                 n /= 2;
             }
-            for (int k = 3; k < Math.Sqrt(n); k += 2)
+            for (int k = 3; k *k< n; k += 2)
             {
                 while (n % k == 0)
                 {
