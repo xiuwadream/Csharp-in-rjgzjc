@@ -1,7 +1,14 @@
 #过滤文件
 *.config
 *.csproj
+*.sln
+*.suo
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
 #过滤文件夹
 bin/
 obj/
 Properties/
+.vs/
