@@ -7,8 +7,16 @@
 *.ide
 *.ide-shm
 *.ide-wal
+*.xml
 #过滤文件夹
 bin/
 obj/
 Properties/
 .vs/
+Properties/
+TestResults/
+packages/
+#例外
+!order.xml
+!test.xml
+!test2.xml
