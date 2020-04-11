@@ -47,10 +47,15 @@ namespace Homework5
 
         public int AddOrder(string currentUser)
         {
-            int id = orders.Count+1;
+            int id = orders.Last().Oid+1;
             Order order = new Order(id, currentUser);
             orders.Add(order);
             return id;
+        }
+        public void AddOrder(Order order)
+        {
+            order.Oid= orders.Last().Oid + 1;
+            orders.Add(order);
         }
         public bool AddItem(int id,string gName,int num)
         {
@@ -92,6 +97,11 @@ namespace Homework5
                 return false;
             }
             return true;
+        }
+        public void UpdateOrder(Order ordVal,Order newVal )
+        {
+            int i=this.orders.FindIndex((order) => order.Equals(ordVal));
+            orders[i] = newVal;
         }
 
         public bool DeleteOrder(int id)

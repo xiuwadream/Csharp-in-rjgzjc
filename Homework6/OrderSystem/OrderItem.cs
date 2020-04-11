@@ -49,7 +49,7 @@ namespace Homework5
         }
     }
 
-    class GoodsPrice
+    public class GoodsPrice
     {
         static Dictionary<string, double> priceList;
         static GoodsPrice(){
@@ -68,6 +68,10 @@ namespace Homework5
                 throw new ArgumentException("没有这种商品");
             }
             return priceList[gName];
+        }
+        public static Dictionary<string, double> GetList()
+        {
+            return priceList;
         }
     }
 }

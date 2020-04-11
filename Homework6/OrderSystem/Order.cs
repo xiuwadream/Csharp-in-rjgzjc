@@ -19,7 +19,7 @@ namespace Homework5
         public bool IsComplete { get => isComplete; set => isComplete = value; }
         public string CreateDate { get => createDate; set => createDate = value; }
         public string User { get => user; set => user = value; }
-        public List<OrderItem> OrderItems;
+        public List<OrderItem> OrderItems { get; set; }
 
         public Order() { }
         public Order(int oid,string user)
